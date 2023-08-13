@@ -1,0 +1,62 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#scrollToTopBtn:focus {
+    outline: none;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    opacity: 0.9;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    /* outline: 3px solid steelblue; */
+    /* box-shadow: 0 0 10px 5px white; */
+  
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+    font-size: 25px;
+    z-index: 9999;
+    transition: 0.5s ease-in-out;
+}
+  
+#scrollToTopBtn:hover,
+#scrollToTopBtn:active {
+    background: #222;
+    opacity: 1;
+}
+
+#scrollToTopBtn:hover,
+#scrollToTopBtn:focus {
+    transform: scale(1.1);
+}
+
+#scrollToTopBtn:active {
+    transform: scale(0.9);
+}
+
+/* Mobile View */
+@media (max-width: 600px) { /* For screens smaller than 600px; i.e mobile */
+    
+    #scrollToTopBtn {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+
+        right: calc(50% - 15px);
+        bottom: 10px;
+    }
+
+    #scrollToTopBtn i { /* For the arrow (from Font Awesome) inside the button */
+        line-height: 30px; 
+        height: 100%; 
+        display: block; 
+    }
+}
