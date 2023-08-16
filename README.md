@@ -1,1 +1,2 @@
-# Yin-Yang Social platform of balance
+# Yin-Yang Social Platform of Balance
+### "Finding Equilibrium in Contrast"
