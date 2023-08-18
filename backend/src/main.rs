@@ -6,7 +6,7 @@ use image::Reader;
 
 fn main() {
 async fn index() -> impl Responder {
-    "Hello world!"
+    "User access detected."
 }
 
 #[actix_web::main]
@@ -43,108 +43,9 @@ let img = reader.decode()
 }
 
 //50*2 words(50+, 50-)
-let mut neg_text: String = 
-"die",
-"death",
-"kill",
-"crime",
-"violence",
-"war",
-"poverty",
-"hunger",
-"disease",
-"disaster",
-"crash",
-"accident",
-"failure",
-"decline",
-"lost",
-"end",
-"worst",
-"crisis",
-"danger",
-"threat",
-"fear",
-"worry",
-"pain",
-"suffer",
-"loss",
-"damage",
-"broken",
-"dirty",
-"ugly",
-"late",
-"wrong",
-"failed",
-"rejected",
-"lost",
-"suspected",
-"accused",
-"convicted",
-"injured",
-"missing",
-"fire",
-"flood",
-"earthquake",
-"tsunami",
-"tornado",
-"hurricane",
-"blizzard",
-"heatwave",
-"drought",
-"pandemic",
-"epidemic";
-let pos_text: String =
-,"new"
-,"found"
-,"breakthrough"
-,"success"
-,"win"
-,"hope"
-,"cure"
-,"peace"
-,"love"
-,"happy"
-,"progress"
-,"growth"
-,"improve"
-,"achieve"
-,"help"
-,"support"
-,"donate"
-,"volunteer"
-,"donate"
-,"save"
-,"heal"
-,"relieve"
-,"comfort"
-,"support"
-,"empower"
-,"inspire"
-,"celebrate"
-,"optimistic"
-,"promising"
-,"bright"
-,"future"
-,"opportunity"
-,"change"
-,"better"
-,"united"
-,"together"
-,"strong"
-,"courageous"
-,"determined"
-,"resilience"
-,"hopeful"
-,"grateful"
-,"blessed"
-,"fortunate"
-,"blessed"
-,"amazing"
-,"wonderful"
-,"incredible"
-,"milestone"
-,"possibilities";
+let mut neg_text: String = "die", "death", "kill", "crime", "violence", "war", "poverty", "hunger", "disease", "disaster", "crash", "accident", "failure", "decline", "lost", "end", "worst", "crisis", "danger", "threat", "fear", "worry", "pain", "suffer", "loss", "damage", "broken", "dirty", "ugly", "late", "wrong", "failed", "rejected", "lost", "suspected", "accused", "convicted", "injured", "missing", "fire", "flood", "earthquake", "tsunami", "tornado", "hurricane", "blizzard", "heatwave", "drought", "pandemic", "epidemic";
+    
+let pos_text: String = "new", "found", "breakthrough", "success", "win", "hope", "cure", "peace", "love", "happy", "progress", "growth", "improve", "achieve", "help", "support", "donate", "volunteer", "donate", "save", "heal", "relieve", "comfort", "support", "empower", "inspire", "celebrate", "optimistic", "promising", "bright", "future", "opportunity", "change", "better", "united", "together", "strong", "courageous", "determined", "resilience", "hopeful", "grateful", "blessed", "fortunate", "blessed", "amazing", "wonderful", "incredible", "milestone", "possibilities";
 
 let mut text: String = imgtext, ttext;
 let mut negativity_score = 0;
@@ -170,4 +71,3 @@ for word in text.split_whitespace() {
         println!("The paragraph is neutral.");
     }
 }
-
