@@ -1,0 +1,22 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    height: 400px;
+    width: 200px;
+}
+
+.card-img {
+    border-radius: 12px 12px 0 0;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.dwn-btn {
+    border-radius: 10%;
+}

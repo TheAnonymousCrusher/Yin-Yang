@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
 
     <title>Home - Yin Yang</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="../css/theme-colors.css">
     
     <link rel="stylesheet" href="../css/scrollToTop.css">
     <link rel="stylesheet" href="../css/home.css">
@@ -15,12 +17,16 @@
 </head>
 <body>
 
-  <section class="container">
+  <section class="card-container">
     
   </section>
 
   <!-- Scroll to Top Button -->
   <a id="scrollToTopBtn" href="#"><i class="fas fa-angle-up"></i></a>
+
+  <button class="theme-picker" onclick="setDarkMode()">
+    <img src="../svg/moon.svg" alt="Moon SVG" width="25" height="25">
+  </button>
 
 
   
@@ -47,9 +53,8 @@
 
 
 
-
   <script src="../js/scrollToTop.js"></script>
-  <script src="../css/parralax.js"></script>
+  <script src="../js/theme-picker.js"></script>
 
   <!-- <script src="../js/devTools.js"></script> -->
 </body>

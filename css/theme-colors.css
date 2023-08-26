@@ -1,0 +1,41 @@
+:root {
+    --background-1: white;
+    --background-2: #ccc;
+    --background-3: #333;
+    --background-4: #111;
+    --text-1: black;
+    --text-2: silver;
+    --accent-1: #34fcfa;
+    --accent-2: #24a3a2;
+
+    transition: 0.5s ease-in-out;
+}
+
+.dark {
+    transition: 0.5s ease-in-out;
+
+    --background-1: #333;
+    --background-2: #111;
+    --background-3: white;
+    --background-4: #ccc;
+    --text-1: white;
+    --text-2: silver;
+    --accent-1: #34fcfa;
+    --accent-2: #24a3a2;
+}
+
+.theme-picker {
+    position: fixed;
+    background: steelblue;
+    outline: none;
+    border-radius: 50%;
+    padding: 10px 12px;
+    bottom: 16px;
+    left: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.theme-picker:hover {
+    background: lightblue;
+    transform: scale(1.05);
+}

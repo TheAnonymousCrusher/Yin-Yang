@@ -6,12 +6,12 @@ scrollToTopBtn.style.display = "none";
 
 // Attach the scroll event listener
 window.onscroll = function() {
-    scrollToTopFunction();
+    scrollToTopButton();
 };
 
-function scrollToTopFunction() {
+function scrollToTopButton() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopBtn.style.display = "flex";
+        scrollToTopBtn.style.display = "block";
     } else {
         scrollToTopBtn.style.display = "none";
     }

@@ -10,7 +10,7 @@ html {
     position: fixed;
     width: 50px;
     height: 50px;
-    background: #333;
+    background: var(--background-3);
     opacity: 0.9;
     bottom: 30px;
     right: 30px;
@@ -20,8 +20,9 @@ html {
   
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
-    color:white;
+    line-height: 45px;
+    cursor: pointer;
+    color: var(--background-1);
     font-size: 25px;
     z-index: 9999;
     transition: 0.5s ease-in-out;
@@ -29,7 +30,7 @@ html {
   
 #scrollToTopBtn:hover,
 #scrollToTopBtn:active {
-    background: #222;
+    background: var(--background-4);
     opacity: 1;
 }
 
@@ -50,13 +51,14 @@ html {
         width: 30px;
         font-size: 20px;
 
-        right: calc(50% - 15px);
-        bottom: 10px;
+        line-height: 30px;
+
+        right: calc(50% - 30px);
+        bottom: 30px;
     }
 
     #scrollToTopBtn i { /* For the arrow (from Font Awesome) inside the button */
-        line-height: 30px; 
-        height: 100%; 
-        display: block;
+        /* line-height: 20px; */
+        height: 100%;
     }
 }
