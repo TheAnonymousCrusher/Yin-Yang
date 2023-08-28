@@ -53,7 +53,7 @@ html {
 
         line-height: 30px;
 
-        right: calc(50% - 30px);
+        right: calc(50vw);
         bottom: 30px;
     }
 
