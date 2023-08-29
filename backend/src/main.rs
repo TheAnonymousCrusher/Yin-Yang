@@ -45,7 +45,7 @@ static mut text: String = [&imgtext, &text];
 static mut negativity_score: int32 =();
 static mut positivity_score: int32 =();
 const words: String = text.split_whitespace();
-for word in words(){
+let word = (& words){
         if neg_text.contains(&word) {
             negativity_score += 1;
         } else if pos_text.contains(&word) {
