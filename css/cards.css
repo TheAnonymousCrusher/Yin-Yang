@@ -4,19 +4,107 @@
     justify-content: center;
 }
 
-.card {
+/* .card {
     height: 400px;
-    width: 200px;
+    width: 270px;    
+    border-radius: 10px;
+    background: #222;
+    margin: 10px;
+} */
+
+  /* Style the counter cards */
+  .card {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */               /*this adds the "card" effect */
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    outline: 3px solid silver;
 }
 
 .card-img {
-    border-radius: 12px 12px 0 0;
+    border-radius: 8px;
+    background-color: red;
+    width: 100%;
 }
 
 .card-title {
     font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+    color: black;
 }
 
-.dwn-btn {
-    border-radius: 10%;
+.down-btn {
+    background-color: black;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+.fullscreen-btn {
+    background-color: black;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 32%;
+    padding: 0 16px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+    margin: 0 -5px;
+    justify-content: center;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 560px) {
+    .column {
+      width: 95%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+  @media screen and (max-width: 900px) and (min-width: 560px){
+    .column {
+      width: 48%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+::-webkit-scrollbar {
+    width: 0px; 
 }

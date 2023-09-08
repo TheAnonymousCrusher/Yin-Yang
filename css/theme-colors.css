@@ -26,18 +26,18 @@
 
 .theme-picker {
     position: fixed;
-    background: steelblue;
+    background: var(--accent-1);
     outline: none;
     border-radius: 50%;
     padding: 10px 12px;
     bottom: 16px;
     left: 16px;
     transition: 0.3s ease-in-out;
-    height: 5vh;
-    weight: 5vh;
+    /* height: 5vh; */
+    /* width: 5vh; */
 }
 
 .theme-picker:hover {
-    background: lightblue;
+    background: var(--accent-2);
     transform: scale(1.05);
 }
