@@ -44,27 +44,27 @@
 }
 
 .down-btn {
-    background-color: var(--text-2);
+    background-color: #ddd;
     border-radius: 7px;
     font-size: 20px;
     justify-content: center;
     display: inline-block;
     width: 45%;
     text-decoration: none;
-    color: var(--background-1);
+    color: #111;
     transition: 0.3s ease-in-out;
     margin: 10px 1.5% 10px 0;
 }
 
 .fullscreen-btn {
-    background-color: var(--text-2);
+    background-color: #ddd;
     border-radius: 7px;
     font-size: 20px;
     justify-content: center;
     display: inline-block;
     width: 45%;
     text-decoration: none;
-    color: var(--background-1);
+    color: #111;
     transition: 0.3s ease-in-out;
     margin: 10px 0 10px 1.5%;
 }
@@ -73,7 +73,8 @@
 .down-btn:focus, .fullscreen-btn:focus {
   transform: scale(1.05);
   color: var(--background-2);
-  outline: 3px solid steelblue;
+  /* outline: 3px solid steelblue; */
+  background: #ffdd90;  /* #73c0ff */
 }
 
   /* Float 3 columns side by side */

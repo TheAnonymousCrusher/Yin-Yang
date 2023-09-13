@@ -1,159 +1,169 @@
 /* .theme-picker {
-    position: fixed;
-    background: var(--accent-1);
-    outline: none;
-    border-radius: 50%;
-    padding: 10px 12px;
-    bottom: 16px;
-    left: 16px;
-    transition: 0.3s ease-in-out;
-    /* height: 5vh; */
-    /* width: 5vh; */
-/* } */
-
+     position: fixed;
+     background: var(--accent-1);
+     outline: none;
+     border-radius: 50%;
+     padding: 10px 12px;
+     bottom: 16px;
+     left: 16px;
+     transition: 0.3s ease-in-out;
+    /* height: 5vh;
+     */
+    /* width: 5vh;
+     */
+    /* 
+}
+ */
 /* .theme-picker:hover {
-    background: var(--accent-2);
-    transform: scale(1.05);
-} */ 
+     background: var(--accent-2);
+     transform: scale(1.05);
+}
+ */
 
+ :root {
+  --background-1: white;
+  --background-2: #ccc;
+  --background-3: #333;
+  --background-4: #111;
+  --text-1: black;
+  --text-2: silver;
+  --accent-1: #34fcfa;
+  --accent-2: #24a3a2;
+}
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
+.color-picker{
+  padding-top: 50px;
+}
 
+.color-picker > fieldset {
+  border: 0;
+  display: flex;
+  gap: 2rem;
+  width: fit-content;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  margin-inline: auto;
+  border-radius: 0 0 1rem 1rem;
+  margin-bottom: 10px;
+}
 
-
-
-:root {
-    --background-1: white;
-    --background-2: #ccc;
-    --background-3: #333;
-    --background-4: #111;
-    --text-1: black;
-    --text-2: silver;
-    --accent-1: #34fcfa;
-    --accent-2: #24a3a2;
+.color-picker input[type="radio"] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  outline: 3px solid var(--radio-color, currentColor);
+  outline-offset: 3px;
+  border-radius: 50%;
 }
 
 
 
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-  
-  .color-picker > fieldset {
-    border: 0;
-    display: flex;
-    gap: 2rem;
-    width: fit-content;
-    background: #fff;
-    padding: 1rem 1.5rem;
-    margin-inline: auto;
-    border-radius: 0 0 1rem 1rem;
-    margin-bottom: 10px;
-  }
-  
-  .color-picker input[type="radio"] {
-    appearance: none;
-    width: 1.5rem;
-    height: 1.5rem;
-    outline: 3px solid var(--radio-color, currentColor);
-    outline-offset: 3px;
-    border-radius: 50%;
-  }
-  
-  .color-picker input[type="radio"]:checked {
-    background-color: var(--radio-color);
-  }
-  
-  .color-picker input[type="radio"]#light {
-    --radio-color: gray;
-  }
-  .color-picker input[type="radio"]#pink {
-    --radio-color: pink;
-  }
-  .color-picker input[type="radio"]#blue {
-    --radio-color: blue;
-  }
-  .color-picker input[type="radio"]#green {
-    --radio-color: green;
-  }
-  .color-picker input[type="radio"]#dark {
-    --radio-color: #232323;
-  }
-  
-  .pink {
-    --background-1: pink;
-    --background-2: rgb(248, 140, 158);
-    --background-3: #333;
-    --background-4: #111;
-    --text-1: black;
-    --text-2: silver;
-    --accent-1: #34fcfa;
-    --accent-2: #24a3a2;
-  }
-  
-  .blue {
-    --background-1: white;
-    --background-2: #ccc;
-    --background-3: #333;
-    --background-4: #111;
-    --text-1: black;
-    --text-2: silver;
-    --accent-1: #34fcfa;
-    --accent-2: #24a3a2;
-  }
-  
-  .green {
-    --background-1: white;
-    --background-2: #ccc;
-    --background-3: #333;
-    --background-4: #111;
-    --text-1: black;
-    --text-2: silver;
-    --accent-1: #34fcfa;
-    --accent-2: #24a3a2;
-  }
-  
-  .dark {
-    --background-1: #101010;
-    --background-2: #222;
-    --background-3: #333;
-    --background-4: #111;
-    --text-1: white;
-    --text-2: silver;
-    --accent-1: #34fcfa;
-    --accent-2: #24a3a2;
-  }
-  
-  :root:has(#pink:checked) {
-    --clr-body-bg: hsl(310 50% 90%);
-    --clr-card-bg: hsl(310 50% 100%);
-    --clr-text: hsl(310 50% 15%);
-    --clr-heading: hsl(310 50% 25%);
-  }
-  
-  :root:has(#blue:checked) {
-    --clr-body-bg: hsl(209 50% 90%);
-    --clr-card-bg: hsl(209 50% 100%);
-    --clr-text: hsl(209 50% 15%);
-    --clr-heading: hsl(209 50% 25%);
-  }
-  
-  :root:has(#green:checked) {
-    --clr-body-bg: hsl(109 50% 90%);
-    --clr-card-bg: hsl(109 50% 100%);
-    --clr-text: hsl(109 50% 15%);
-    --clr-heading: hsl(109 50% 25%);
-  }
-  
-  :root:has(#dark:checked) {
-    --clr-body-bg: hsl(209 50% 10%);
-    --clr-card-bg: hsl(209 50% 5%);
-    --clr-text: hsl(209 50% 90%);
-    --clr-heading: hsl(209 50% 80%);
-  }  
+.color-picker input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+
+.color-picker input[type="radio"]#light {
+  --radio-color: gray;
+}
+
+.color-picker input[type="radio"]#pink {
+  --radio-color: pink;
+}
+
+.color-picker input[type="radio"]#blue {
+  --radio-color: blue;
+}
+
+.color-picker input[type="radio"]#green {
+  --radio-color: green;
+}
+
+.color-picker input[type="radio"]#dark {
+  --radio-color: #232323;
+}
+
+
+
+.pink {
+  --background-1: pink;
+  --background-2: rgb(248, 140, 158);
+  --background-3: #333;
+  --background-4: #111;
+  --text-1: black;
+  --text-2: silver;
+  --accent-1: #34fcfa;
+  --accent-2: #24a3a2;
+}
+
+.blue {
+  --background-1: white;
+  --background-2: #ccc;
+  --background-3: #333;
+  --background-4: #111;
+  --text-1: black;
+  --text-2: silver;
+  --accent-1: #34fcfa;
+  --accent-2: #24a3a2;
+}
+
+.green {
+  --background-1: white;
+  --background-2: #ccc;
+  --background-3: #333;
+  --background-4: #111;
+  --text-1: black;
+  --text-2: silver;
+  --accent-1: #34fcfa;
+  --accent-2: #24a3a2;
+}
+
+.dark {
+  --background-1: #101010;
+  --background-2: #222;
+  --background-3: #333;
+  --background-4: #111;
+  --text-1: white;
+  --text-2: silver;
+  --accent-1: #34fcfa;
+  --accent-2: #24a3a2;
+}
+
+
+
+:root:has(#pink:checked) {
+  --clr-body-bg: hsl(310 50% 90%);
+  --clr-card-bg: hsl(310 50% 100%);
+  --clr-text: hsl(310 50% 15%);
+  --clr-heading: hsl(310 50% 25%);
+}
+
+:root:has(#blue:checked) {
+  --clr-body-bg: hsl(209 50% 90%);
+  --clr-card-bg: hsl(209 50% 100%);
+  --clr-text: hsl(209 50% 15%);
+  --clr-heading: hsl(209 50% 25%);
+}
+
+:root:has(#green:checked) {
+  --clr-body-bg: hsl(109 50% 90%);
+  --clr-card-bg: hsl(109 50% 100%);
+  --clr-text: hsl(109 50% 15%);
+  --clr-heading: hsl(109 50% 25%);
+}
+
+:root:has(#dark:checked) {
+  --clr-body-bg: hsl(209 50% 10%);
+  --clr-card-bg: hsl(209 50% 5%);
+  --clr-text: hsl(209 50% 90%);
+  --clr-heading: hsl(209 50% 80%);
+}
