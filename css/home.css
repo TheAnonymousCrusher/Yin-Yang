@@ -1,5 +1,5 @@
 body {
-    background: #010101;
+    background: var(--background-1);
     color: #fff;
     height: 1200vh;
 }

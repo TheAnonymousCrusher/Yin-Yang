@@ -1,8 +1,12 @@
-.card-container {
+* {
+  box-sizing: border-box;
+}
+
+/* .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 /* .card {
     height: 400px;
@@ -14,18 +18,20 @@
 
   /* Style the counter cards */
   .card {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */               /*this adds the "card" effect */
-    padding: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */               /* this adds the "card" effect */
+    padding: 5px;
     text-align: center;
-    background-color: #fff;
+    background-color: var(--background-2);
     border-radius: 12px;
     outline: 3px solid silver;
+    margin-bottom: 15px;
 }
 
 .card-img {
     border-radius: 8px;
-    background-color: red;
-    width: 100%;
+    background-color: aquamarine;
+    min-width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 .card-title {
@@ -33,43 +39,47 @@
     font-size: 18px;
     margin-top: 10px;
     text-align: left;
-    color: black;
+    color: var(--text-1);
+    margin-left: 5px;
 }
 
 .down-btn {
-    background-color: black;
-    border-radius: 5px;
-    font-size: 25px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
+    background-color: var(--text-2);
+    border-radius: 7px;
+    font-size: 20px;
     justify-content: center;
-    display: flex;
+    display: inline-block;
+    width: 45%;
+    text-decoration: none;
+    color: var(--background-1);
+    transition: 0.3s ease-in-out;
+    margin: 10px 1.5% 10px 0;
 }
 
 .fullscreen-btn {
-    background-color: black;
-    border-radius: 5px;
-    font-size: 25px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
+    background-color: var(--text-2);
+    border-radius: 7px;
+    font-size: 20px;
+    justify-content: center;
+    display: inline-block;
+    width: 45%;
+    text-decoration: none;
+    color: var(--background-1);
+    transition: 0.3s ease-in-out;
+    margin: 10px 0 10px 1.5%;
 }
 
-
-
-
-
-
-
-* {
-    box-sizing: border-box;
+.down-btn:hover, .fullscreen-btn:hover,
+.down-btn:focus, .fullscreen-btn:focus {
+  transform: scale(1.05);
+  color: var(--background-2);
+  outline: 3px solid steelblue;
 }
-  
-  /* Float four columns side by side */
+
+  /* Float 3 columns side by side */
   .column {
     float: left;
-    width: 32%;
+    width: 30vw;
     padding: 0 16px;
     padding-top: 10px;
     margin-bottom: 15px;
@@ -91,7 +101,7 @@
   /* Responsive columns - one column layout (vertical) on small screens */
   @media screen and (max-width: 560px) {
     .column {
-      width: 95%;
+      width: 90%;
       display: block;
       margin-bottom: 20px;
     }
@@ -99,12 +109,42 @@
 
   @media screen and (max-width: 900px) and (min-width: 560px){
     .column {
-      width: 48%;
+      width: 45%;
       display: block;
       margin-bottom: 20px;
     }
   }
 
+/* 
 ::-webkit-scrollbar {
     width: 0px; 
-}
+} */
+
+
+
+
+
+
+
+
+/* 
+
+
+
+DMCA
+Wallpapers.com respects the copyright of all work, and doesn’t allow other users to use other people’s wallpapers or images for anything that is against the copyright protection terms and conditions. Any kind of copyright infringement is not allowed on Wallpapers.com, and we blacklist all the copyrighted contents from displaying in the search results.
+
+
+Wallpapers.com complies with the Digital Millennium Copyright Act (DMCA) and promptly suspends Content from access when properly notified.
+
+
+Filing a completed DMCA notice via:
+
+Wallpapers.com DMCA Agent
+4/F, Fontaine Building,
+Tsim Sha Tsui,
+Hong Kong
+
+
+Email: dmca@Wallpapers.com
+ */

@@ -6,6 +6,7 @@
 <!--     <meta http-equiv="refresh" content="5"> -->
 
     <title>Home - Yin Yang</title>
+    <link rel="icon" href="assets/favicon.svg"/>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,6 +15,10 @@
     <link rel="stylesheet" href="css/scrollToTop.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cards.css">
+
+    <meta property="og:title" content="Yin Yang" />
+    <meta property="og:description" content="Brief, single sentence description of web page." />
+    <meta property="og:image" content="assets/meta-bg.jpg" />
     
 </head>
 <body>
@@ -25,9 +30,31 @@
   <!-- Scroll to Top Button -->
   <a id="scrollToTopBtn" href="#"><i class="fas fa-angle-up"></i></a>
 
-  <button class="theme-picker" onclick="setDarkMode()">
+  <!-- <button class="theme-picker" onclick="setDarkMode()">
     <img src="svg/moon.svg" alt="Moon SVG" width="25" height="25">
-  </button>
+  </button> -->
+
+  <form class="color-picker" action="">
+    <fieldset>
+      <legend class="visually-hidden">Pick a color scheme</legend>
+      <label for="light" class="visually-hidden">Light</label>
+      <input type="radio" name="theme" id="light" checked>
+  
+      <label for="pink" class="visually-hidden">Pink theme</label>      <!-- Actually Solarized Dark -->
+      <input type="radio" id="pink" name="theme">
+  
+      <label for="blue" class="visually-hidden">Blue theme</label>      <!-- Actually High Contrast Dark -->
+      <input type="radio" id="blue" name="theme">
+  
+      <label for="green" class="visually-hidden">Green theme</label>    <!-- Actually GX Classic -->
+      <input type="radio" id="green" name="theme">
+  
+      <label for="dark" class="visually-hidden">Dark theme</label>
+      <input type="radio" id="dark" name="theme">
+    </fieldset>
+  </form>
+
+
 
 
 
@@ -41,30 +68,38 @@
         <img src="https://picsum.photos/1024/1024" class="card-img">
 
         <div class="card-title">Low Res. Image</div>
-        <a href="" class="down-btn"></a>
-        <a href="" class="fullscreen-btn"></a>
+
+        <div><a href="" class="down-btn"><i class="fas fa-download"></i></a>
+        <a href="" class="fullscreen-btn"><i class="fas fa-expand"></i></a></div>
+
       </div>
     </div>
   
+
     <div class="column">
       <div class="card">
 
         <img src="https://picsum.photos/1025/1025" class="card-img">
 
-        <div class="card-title">A medium-resolutioned picture</div>
-        <a href="" class="down-btn"></a>
-        <a href="" class="fullscreen-btn"></a>
+        <div class="card-title">A medium resolution picture</div>
+        
+        <div><a href="" class="down-btn"><i class="fas fa-download"></i></a>
+        <a href="" class="fullscreen-btn"><i class="fas fa-expand"></i></a></div>
+
       </div>
     </div>
     
+
     <div class="column">
       <div class="card">
 
         <img src="https://picsum.photos/1023/1023" class="card-img">
 
-        <div class="card-title">An extremely high resolutioned image with...</div>
-        <a href="" class="down-btn"></a>
-        <a href="" class="fullscreen-btn"></a>
+        <div class="card-title">An extremely high resolution image</div>
+        
+        <div><a href="" class="down-btn"><i class="fas fa-download"></i></a>
+        <a href="" class="fullscreen-btn"><i class="fas fa-expand"></i></a></div>
+
       </div>
     </div>
 
@@ -84,30 +119,38 @@
         <img src="https://picsum.photos/1022/1022" class="card-img">
 
         <div class="card-title">Low Res. Image</div>
-        <a href="" class="down-btn"></a>
-        <a href="" class="fullscreen-btn"></a>
+        
+        <div><a href="" class="down-btn"><i class="fas fa-download"></i></a>
+        <a href="" class="fullscreen-btn"><i class="fas fa-expand"></i></a></div>
+
       </div>
     </div>
   
+
     <div class="column">
       <div class="card">
 
         <img src="https://picsum.photos/1021/1021" class="card-img">
 
-        <div class="card-title">A medium-resolutioned picture</div>
-        <a href="" class="down-btn"></a>
-        <a href="" class="fullscreen-btn"></a>
+        <div class="card-title">A medium resolution picture</div>
+        
+        <div><a href="" class="down-btn"><i class="fas fa-download"></i></a>
+        <a href="" class="fullscreen-btn"><i class="fas fa-expand"></i></a></div>
+
       </div>
     </div>
+
     
     <div class="column">
       <div class="card">
 
         <img src="https://picsum.photos/1020/1020" class="card-img">
 
-        <div class="card-title">An extremely high resolutioned image with...</div>
-        <a href="" class="down-btn"></a>
-        <a href="" class="fullscreen-btn"></a>
+        <div class="card-title">An extremely high resolution image</div>
+
+        <div><a href="" class="down-btn"><i class="fas fa-download"></i></a>
+        <a href="" class="fullscreen-btn"><i class="fas fa-expand"></i></a></div>  
+
       </div>
     </div>
   </div>
@@ -146,6 +189,8 @@
 
   <script src="js/scrollToTop.js"></script>
   <script src="js/theme-picker.js"></script>
+  <script src="js/img.js"></script>
+
 
   <!-- <script src="../js/devTools.js"></script> -->
 </body>
