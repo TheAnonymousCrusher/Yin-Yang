@@ -20,14 +20,14 @@ const setTheme = function () {
       themeOption.checked = true;
     }
   });
-  // A Fallback for no ":has()" support
+  // A Fallback(1) for no ":has()" support
   document.documentElement.className = activeTheme;
 };
 
 colorThemes.forEach((themeOption) => {
   themeOption.addEventListener("click", () => {
     storeTheme(themeOption.id);
-    // A Fallback for no ":has()" support
+    // A Fallback(2) for no ":has()" support
     document.documentElement.className = themeOption.id;
   });
 });

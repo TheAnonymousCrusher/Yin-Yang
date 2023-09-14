@@ -21,7 +21,7 @@
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */               /* this adds the "card" effect */
     padding: 5px;
     text-align: center;
-    background-color: var(--background-2);
+    background-color: #222;
     border-radius: 12px;
     outline: 3px solid silver;
     margin-bottom: 15px;
@@ -29,9 +29,9 @@
 
 .card-img {
     border-radius: 8px;
-    background-color: aquamarine;
+    background-color: #333;
     min-width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
 }
 
 .card-title {
@@ -39,7 +39,7 @@
     font-size: 18px;
     margin-top: 10px;
     text-align: left;
-    color: var(--text-1);
+    color: #eee;
     margin-left: 5px;
 }
 
@@ -72,7 +72,7 @@
 .down-btn:hover, .fullscreen-btn:hover,
 .down-btn:focus, .fullscreen-btn:focus {
   transform: scale(1.05);
-  color: var(--background-2);
+  color: #111;
   /* outline: 3px solid steelblue; */
   background: #ffdd90;  /* #73c0ff */
 }
@@ -117,9 +117,7 @@
   }
 
 /* 
-::-webkit-scrollbar {
-    width: 0px; 
-} */
+
 
 
 
@@ -149,3 +147,19 @@ Hong Kong
 
 Email: dmca@Wallpapers.com
  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

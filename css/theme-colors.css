@@ -1,24 +1,23 @@
-/* .theme-picker {
+/*Orignial toggle, for temporary use
+
+.theme-picker {
      position: fixed;
-     background: var(--accent-1);
+     background: aquamarine;
      outline: none;
      border-radius: 50%;
      padding: 10px 12px;
      bottom: 16px;
      left: 16px;
      transition: 0.3s ease-in-out;
-    /* height: 5vh;
-     */
-    /* width: 5vh;
-     */
-    /* 
+     height: 5vh;
+     width: 5vh;
 }
- */
-/* .theme-picker:hover {
-     background: var(--accent-2);
+
+.theme-picker:hover {
+     background: aqua;
      transform: scale(1.05);
-}
- */
+}*/
+
 
  :root {
   --background-1: white;
@@ -41,8 +40,8 @@
   width: 1px;
 }
 
-.color-picker{
-  padding-top: 50px;
+.color-picker {
+  padding-top: calc(50px + 1rem);
 }
 
 .color-picker > fieldset {
@@ -51,10 +50,10 @@
   gap: 2rem;
   width: fit-content;
   background: #fff;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   margin-inline: auto;
-  border-radius: 0 0 1rem 1rem;
-  margin-bottom: 10px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .color-picker input[type="radio"] {

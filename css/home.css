@@ -1,5 +1,8 @@
 body {
-    background: var(--background-1);
-    color: #fff;
-    height: 1200vh;
+    background: #101010;
+    height: 1000vh;
 }
+
+::-webkit-scrollbar {
+    width: 0px; 
+} 

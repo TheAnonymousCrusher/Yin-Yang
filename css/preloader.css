@@ -1,0 +1,42 @@
+.preloader{
+  /* Making the preloader floating over other elements.
+  The preloader is visible by default. */
+
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  /* background-size: cover; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader > h1 {
+  /* text-align: center; */
+  /* align-items: center; */
+
+  font-size: 4vw;
+  font-family: system-ui;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*
+@media screen and (max-width: 560px) {
+    .preloader {
+        font-size: 14vw;
+    }
+}
+
+@media screen and (min-width: 560px) and (max-width: 900px){
+    .preloader {
+        font-size: 10vw;
+    }
+}*/
