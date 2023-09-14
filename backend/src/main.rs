@@ -14,7 +14,7 @@ async fn index() -> impl Responder {
     App::new().service
         (web::scope("/app")
 //handles requests for `GET /app/index.html, and other frontend staff`
-                .route("/index.html", main.js, css.css, web::get().to(index)),
+                .route("/home.html", bridge.js, home.css, web::get().to(index)),
         )
     .bind(("127.0.0.1", 8181))?
     .run()
