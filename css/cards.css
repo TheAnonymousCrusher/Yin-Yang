@@ -122,34 +122,9 @@
     }
   }
 
-/* 
-
-
-
-
-
-
-
-
-
-/* 
-
-
-
-DMCA
-Wallpapers.com respects the copyright of all work, and doesn’t allow other users to use other people’s wallpapers or images for anything that is against the copyright protection terms and conditions. Any kind of copyright infringement is not allowed on Wallpapers.com, and we blacklist all the copyrighted contents from displaying in the search results.
-
-
-Wallpapers.com complies with the Digital Millennium Copyright Act (DMCA) and promptly suspends Content from access when properly notified.
-
-
-Filing a completed DMCA notice via:
-
-Wallpapers.com DMCA Agent
-4/F, Fontaine Building,
-Tsim Sha Tsui,
-Hong Kong
-
-
-Email: dmca@Wallpapers.com
- */
+.card-description {
+  font-size: 12px;
+  color: silver;
+  margin-left: 5px;
+  text-align: left;
+}
