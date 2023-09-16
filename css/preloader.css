@@ -17,6 +17,11 @@
   align-items: center;
 }
 
+
+
+
+/* Gradient Text */
+
 .preloader > h1 {
   /* text-align: center; */
   /* align-items: center; */
@@ -42,6 +47,32 @@
 }*/
 
 
+
+
+
+/* Yin Yang Spinner */
+
+.yin-yang-loader > img {
+   height: 50vh;
+   aspect-ratio: 1/1;
+   animation: spin 5s infinite;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+
+
+
+
+/* Glitch Loading Screen */
 
 .glitch-wrapper {
    width: 100%;

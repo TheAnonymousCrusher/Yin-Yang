@@ -49,7 +49,7 @@ html {
 
         line-height: 30px;
         justify-content: center;
-        right: calc(50vw + 30px);
+        right: calc(50vw - 30px);
         bottom: 30px;
     }
 

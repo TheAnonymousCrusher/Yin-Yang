@@ -17,7 +17,7 @@
 } */
 
   /* Style the counter cards */
-  .card {
+.card {
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */               /* this adds the "card" effect */
     padding: 5px;
     text-align: center;
@@ -25,8 +25,13 @@
     border-radius: 12px;
     outline: 3px solid silver;
     margin-bottom: 15px;
-/*     height: 100%; */
+    transition: 0.5s ease-in-out;
+    /* height: 100%; */
 }
+
+/*.card:hover{
+  transform: scale(1.05);
+}*/
 
 .card-img {
     border-radius: 8px;

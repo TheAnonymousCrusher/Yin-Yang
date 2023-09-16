@@ -146,4 +146,18 @@
         height: calc(100vh - 50px);
         overflow-y: auto;
     }
+
+    .nav:hover {
+    opacity: 0.9;
+    }
+
+    .nav > .nav-links > a:hover,
+    .nav > .nav-links > a:focus,
+    .nav > .nav-links > a:active {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffdd90;
+
+    height: 50px;
+    transform: translateY(0px);
+    }
 }
