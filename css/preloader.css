@@ -53,9 +53,9 @@
 /* Yin Yang Spinner */
 
 .yin-yang-loader > img {
-   height: 50vh;
+   height: 15vh;
    aspect-ratio: 1/1;
-   animation: spin 5s infinite;
+   animation: spin 3s infinite;
 }
 
 @keyframes spin {
@@ -82,6 +82,7 @@
    justify-content: center;
    text-align: center;
    background-color: #010101;
+   user-select: none;
 }
 
 .glitch {

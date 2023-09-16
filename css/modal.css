@@ -1,0 +1,106 @@
+.tutorial-open-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: 15px 0 20px 0;
+}
+  
+  
+  
+.tutorial-open-btn {
+    color: white;
+    background: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 0.5rem;
+    transition: 0.3s ease-in-out;
+}
+  
+.tutorial-open-btn:hover, 
+.tutorial-open-btn:focus,
+.tutorial-open-btn:active {
+    transform: scale(1.03);
+    text-decoration: none;
+    color: #ffdd90;
+    background: #111;
+}
+  
+  
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+    /* border-radius: 5rem; */
+}
+  
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.modal-content {
+    border-radius: 1rem;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+}
+  
+.modal-footer {
+    text-align: right;
+    a {
+      color: #585858;
+    }
+    i {
+      color: #d02d2c;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #585858;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.modal-close:hover {
+    color: #888;
+    transform: scale(1.1);
+}
+
+body.modal-open {
+    background-color: rgba(0, 0, 0, 0.9); /* Darken the background when the modal is open */
+    overflow: visible;
+}
+
+
+
+
+
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-5vw);
+    filter: blur(5px);
+
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}

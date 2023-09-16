@@ -23,7 +23,7 @@
     text-align: center;
     background-color: #222;
     border-radius: 12px;
-    outline: 3px solid silver;
+    outline: 2px solid gray;
     margin-bottom: 15px;
     transition: 0.5s ease-in-out;
     /* height: 100%; */
@@ -123,8 +123,8 @@
   }
 
 .card-description {
-  font-size: 12px;
-  color: silver;
+  font-size: 15px;
+  color: white;
   margin-left: 5px;
   text-align: left;
 }
