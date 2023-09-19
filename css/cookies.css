@@ -1,0 +1,38 @@
+.cookie-alert {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: 320px;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  background: #222;
+  outline: 2px solid silver;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 2s;
+}
+
+.cookie-alert > a {
+    color: white;
+    background: steelblue;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+.cookie-title,
+.cookie-description {
+    color: white;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  filter: contrast(150%);
+}

@@ -40,9 +40,9 @@
   width: 1px;
 }
 
-.color-picker {
-  padding-top: calc(50px + 1rem);
-}
+/* .color-picker {
+  outline: 5px solid silver;
+} */
 
 .color-picker > fieldset {
   border: 0;

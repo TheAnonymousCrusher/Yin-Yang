@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/theme-colors.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/cookies.css">
 
     <meta property="og:title" content="Yin Yang" />
     <meta property="og:description" content="Brief, single sentence description of web page." />
@@ -58,7 +59,7 @@
   <div class="nav">
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
-      <a class="nav-title" href="/home.html"><img src="assets/favicon.svg" height="32px"></a>
+      <a class="nav-title" href="home.html"><img src="assets/favicon.svg" height="32px"></a>
     </div>
     
     <div class="nav-btn">
@@ -70,11 +71,12 @@
     </div>
     
     <div class="nav-links">
-      <a href="/home.html" target="_self">HOME</a>
-      <a href="/landing.html" target="_blank">LANDING</a>
+      <!-- <a href="home.html" target="_self">HOME</a> -->
+      <a href="landing.html" target="_blank">LANDING</a>
       <a href="" target="_blank">FAQ</a>
       <a href="" target="_blank">BLOG</a>
       <a href="" target="_blank">GITHUB</a>
+      <a href="#demo-modal">SETTINGS</a>
     </div>
   </div>
 
@@ -82,25 +84,16 @@
 
 
 
-  <form class="color-picker" action="">
-    <fieldset>
-      <legend class="visually-hidden">Pick a color scheme</legend>
-      <label for="light" class="visually-hidden">Light</label>
-      <input type="radio" name="theme" id="light" checked title="Light Theme">
-
-      <label for="pink" class="visually-hidden">Pink theme</label>      
-      <input type="radio" id="pink" name="theme" title="Pink Theme">
-
-      <label for="blue" class="visually-hidden">Blue theme</label>      <!-- Actually Solarized Dark -->
-      <input type="radio" id="blue" name="theme" title="Solarized Dark Theme">
-
-      <label for="green" class="visually-hidden">Green theme</label>    <!-- Actually GX Classic -->
-      <input type="radio" id="green" name="theme" title="GX Classic Theme">
-
-      <label for="dark" class="visually-hidden">Dark theme</label>
-      <input type="radio" id="dark" name="theme" title="Dark Theme">
-    </fieldset>
-  </form>
+  <div class="cookie-card cookie-alert">
+    <div class="cookie-card-body">
+      <h5 class="card-title">&#x1F36A; This Website uses Cookies</h5>
+      <p class="cookie-description">We use cookies to ensure you get the best experience on our website.</p>
+      <div class="btn-toolbar justify-content-end">
+        <a href="http://cookiesandyou.com/" target="_blank" class="btn btn-link">Learn more</a>
+        <a href="#" class="btn btn-primary accept-cookies">Accept</a>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -110,16 +103,48 @@
 
   <div>
     
-    <div class="tutorial-open-btn-container">
+    <!-- <div class="tutorial-open-btn-container">
       <a href="#demo-modal" class="tutorial-open-btn">OPEN TUTORIAL</a>
-    </div>
+    </div> -->
 
     <div id="demo-modal" class="modal">
       <div class="modal-content">
 
         <a href="#" class="modal-close"><i class="fas fa-times"></i></a>
+        <br>
+        <h1>SETTINGS</h1>
+        <hr>
 
         <p class="click-alert">CLICK ON POSTS TO VIEW THEIR FULL TITLE AND DESCRIPTION</p>
+
+
+
+
+
+
+        <form class="color-picker" action="">
+          <fieldset>
+            <legend class="visually-hidden">Pick a color scheme</legend>
+            <label for="light" class="visually-hidden">Light</label>
+            <input type="radio" name="theme" id="light" checked title="Light Theme">
+      
+            <label for="pink" class="visually-hidden">Pink theme</label>      
+            <input type="radio" id="pink" name="theme" title="Pink Theme">
+      
+            <label for="blue" class="visually-hidden">Blue theme</label>                       <!-- Actually Solarized Dark -->
+            <input type="radio" id="blue" name="theme" title="Solarized Dark Theme">
+      
+            <label for="green" class="visually-hidden">Green theme</label>                     <!-- Actually GX Classic -->
+            <input type="radio" id="green" name="theme" title="GX Classic Theme">
+      
+            <label for="dark" class="visually-hidden">Dark theme</label>
+            <input type="radio" id="dark" name="theme" title="Dark Theme">
+          </fieldset>
+        </form>
+
+
+
+
 
       </div>
     </div>
@@ -137,11 +162,24 @@
   <!-- <div><a href="" class="down-btn"><i class="fas fa-download"></i></a>
   <a href="" class="fullscreen-btn"><i class="fas fa-expand"></i></a></div> -->
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="row">
     <div class="column">
       <div class="card">
 
-        <img src="https://picsum.photos/1024/1024" class="card-img">
+        <img src=".temporary/01.jpg" class="card-img">
 
         <div class="card-title">Short title</div>
 
@@ -154,7 +192,7 @@
     <div class="column">
       <div class="card">
 
-        <img src="https://picsum.photos/1025/1025" class="card-img">
+        <img src=".temporary/02.jpg" class="card-img">
 
         <div class="card-title">A medium length title</div>
 
@@ -167,7 +205,7 @@
     <div class="column">
       <div class="card">
 
-        <img src="https://picsum.photos/2024/2024" class="card-img">
+        <img src=".temporary/03.jpg" class="card-img">
 
         <div class="card-title">An pretty long title that's longer than the card itself</div>
 
@@ -186,7 +224,7 @@
     <div class="column">
       <div class="card">
 
-        <img src="https://picsum.photos/3024/3024" class="card-img">
+        <img src=".temporary/04.jpg" class="card-img">
 
         <div class="card-title">Short title</div>
 
@@ -199,7 +237,7 @@
     <div class="column">
       <div class="card">
 
-        <img src="https://picsum.photos/1026/1027" class="card-img">
+        <img src=".temporary/05.jpg" class="card-img">
 
         <div class="card-title">A medium length title</div>
 
@@ -212,7 +250,7 @@
     <div class="column">
       <div class="card">
 
-        <img src="https://picsum.photos/4024/4024" class="card-img">
+        <img src=".temporary/06.jpg" class="card-img">
 
         <div class="card-title">An pretty long title that's longer than the card itself</div>
 
@@ -245,6 +283,7 @@
   <script src="js/navbar.js"></script>
   <script src="js/preloader.js"></script>
   <script src="js/card.js"></script>
+  <script src="js/cookies.js"></script>
 
 
   <!-- <script src="../js/devTools.js"></script> -->

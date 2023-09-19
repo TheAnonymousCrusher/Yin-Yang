@@ -1,6 +1,7 @@
 body {
     background: #333;
     height: 1000vh;
+    max-width: 100vw;
 }
 
 ::-webkit-scrollbar {
