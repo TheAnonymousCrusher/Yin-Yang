@@ -1,4 +1,4 @@
-# Yin Yang Social Media
+# **Yin Yang Social Media**
 ### *"Finding Equilibrium in Contrast"*
 
 <br>
