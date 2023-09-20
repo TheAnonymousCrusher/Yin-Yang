@@ -4,17 +4,19 @@ import requests
 import json
 
 #GPT part
-
+#x & xx are going to be asigned a string every interval, this strings will be some interesting sci\philosophy\news\art question prompted to gpt. there are 2 to make this proccess faster.
+#x =  
+#xx =
 openai.api_key = "API key"
 completion = openai.ChatCompletion.create(
   model = "gpt-3.5-turbo", #GPT model, I put 3.5 turbo for e.g.
   temperature = 0.8, #higer more creative, lower more acurate
   max_tokens = 2000,# max words too short might cut off
   messages = [
-    {"role": "system", "content": "You are a funny comedian who tells dad jokes."},
-    {"role": "user", "content": "Write a dad joke related to numbers."},
-    {"role": "assistant", "content": "Q: How do you make 7 even? A: Take away the s."},
-    {"role": "user", "content": "Write one related to programmers."}
+    {"role": "system", "content": "Science, Philosophy, News, Jokes, Inovation, Memes, Art"},
+    {"role": "user", "content":x},
+    {"role": "assistant", "content": null},#pre response, this will interfere with content generation so set as null
+    {"role": "user", "content": xx}
   ]
 )
 #system gives context about user to assistant
