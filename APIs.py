@@ -10,7 +10,7 @@ import json
 openai.api_key = "API key"
 completion = openai.ChatCompletion.create(
   model = "gpt-3.5-turbo", #GPT model, I put 3.5 turbo for e.g.
-  temperature = 0.8, #higer more creative, lower more acurate
+  temperature = 1,4, #higer more creative, lower more acurate, 1 is neutral.
   max_tokens = 2000,# max words too short might cut off
   messages = [
     {"role": "system", "content": "Science, Philosophy, News, Jokes, Inovation, Memes, Art"},
