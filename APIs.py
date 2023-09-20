@@ -24,3 +24,33 @@ completion = openai.ChatCompletion.create(
 
 #stable diffusion part
 
+url = "https://stablediffusionapi.com/api/v3/text2img"
+
+payload = json.dumps({
+  "key": "",
+  "prompt": "ultra realistic close up portrait ((beautiful pale cyberpunk female with heavy black eyeliner))",
+  "negative_prompt": None,
+  "width": "512",
+  "height": "512",
+  "samples": "1",
+  "num_inference_steps": "10",
+  "seed": None,
+  "guidance_scale": 7.5,
+  "safety_checker": "yes",
+  "multi_lingual": "no",
+  "panorama": "no",
+  "self_attention": "no",
+  "upscale": "no",
+  "embeddings_model": null,
+  #webhook will send image to that ip\domain
+  "webhook": 127.0.0.1,
+  "track_id": None
+})
+
+headers = {
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+print(response.text)
