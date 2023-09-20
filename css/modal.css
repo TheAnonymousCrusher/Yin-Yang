@@ -45,6 +45,10 @@
     /* border-radius: 5rem; */
 }
   
+.modal > * {
+    color: white;
+}
+
 .modal:target {
     visibility: visible;
     opacity: 1;
@@ -55,7 +59,7 @@
     position: relative;
     width: 500px;
     max-width: 90%;
-    background: #fff;
+    background: #222;
     padding: 1em 2em;
 }
   
@@ -72,21 +76,52 @@
 .modal-close {
     position: absolute;
     top: 20px;
-    right: 20px;
-    color: #585858;
+    right: 30px;
+    color: silver;
     text-decoration: none;
     transition: 0.5s;
 }
 
-.modal-close:hover {
-    color: #888;
-    transform: scale(1.1);
+hr {
+    width: 100%;
+    color: white;
+    background: white;
 }
 
-body.modal-open {
-    background-color: rgba(0, 0, 0, 0.9); /* Darken the background when the modal is open */
-    overflow: visible;
+.modal-close:hover {
+    color: gray;
+    /* transform: scale(1.1); */
 }
+
+body.modal-open,
+body#demo-modal {
+    background-color: rgba(0, 0, 0, 0.9); /* Darken the background when the modal is open */
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.settings {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.setting-heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.click-alert {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
 
 
 

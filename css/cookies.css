@@ -31,8 +31,3 @@
 .cookie-description {
     color: white;
 }
-
-.btn-link:hover {
-  text-decoration: none;
-  filter: contrast(150%);
-}

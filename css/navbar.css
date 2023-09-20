@@ -85,6 +85,12 @@
     display: none;
 }
 
+.setting-icon {
+    right: 10px;
+    top: 0px;
+    position: absolute;
+}
+
 /* Media query for mobile screens */
 @media (max-width: 600px) {
     /* Display the navigation button */
@@ -159,5 +165,12 @@
 
     height: 50px;
     transform: translateY(0px);
+    }
+
+    .setting-icon {
+        right: 0;
+        left: 92%;
+        bottom: 0px;
+        top: 94%;
     }
 }

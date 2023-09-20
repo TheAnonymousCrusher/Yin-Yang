@@ -69,7 +69,17 @@
 }
 
 
+@media (max-width: 600px) {
+   .yin-yang-loader > img {
+      height: 7.5vh;
+   }
+}
 
+@media (max-width: 900px) and (min-width: 600px) {
+   .yin-yang-loader > img {
+      height: 10vh;
+   }
+}
 
 
 /* Glitch Loading Screen */
