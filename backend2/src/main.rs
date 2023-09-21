@@ -16,7 +16,7 @@ let _ = HttpServer::new(||{
 let _ = HttpServer::new(|| { 
     App::new()
         .route("/home.htm", web::get().to(HttpResponse::Ok))
-        .route("/style.css", web::get().to(HttpResponse::Ok))
+        .route("/main.css", web::get().to(HttpResponse::Ok))
 })
               .bind(("127.0.0.1", 1010));
 
