@@ -27,6 +27,8 @@ let HTMCSSs = HttpServer::new(|| {
 let content = HttpServer::new(||{
     App::new()
     .route("/content", web::get().top(HttpResponse::Ok))
+})
+    .bind(("127.0.0.1::9191"));
 
 //content folder will have imgs and text in order, img->text->img->text....
 //will be sent in that order
