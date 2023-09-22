@@ -27,3 +27,20 @@ fetch(127.0.0.1)
   .catch((err) => {
     console.error(err);
   });
+
+//fetch content
+
+fetch('127.0.0.1:9191')
+  .then(content.txt, content.webp) => {
+  
+    if (response.ok) {
+    //do somthing with .txt (title, paragraph) and .webp (art picture)
+      
+    } else {
+      // The file could not be retrieved.
+      console.log(`HTTP error: ${response.status}`);
+    }
+  })
+  .catch((err) => {
+    console.error(err);
+  });
