@@ -1,4 +1,3 @@
-
 document.querySelectorAll('.card').forEach(card => {
     let title = card.querySelector('.card-title');
     let description = card.querySelector('.card-description');
@@ -31,11 +30,24 @@ document.querySelectorAll('.card').forEach(card => {
         description.style.whiteSpace = 'normal';
         description.style.overflow = 'visible';
         description.style.textOverflow = 'clip';
-      } else{
+
+        // card.style.scale = "10"
+        // card.style.filter = "blur(2px)"
+        // card.style.height = "90vh"
+        // card.style.width = "95vw"
+        // card.style.width = "95vw"
+      } else {
         description.style.whiteSpace = 'nowrap';
         description.style.overflow = 'hidden';
         description.style.textOverflow = 'ellipsis';
+
+        // card.style.scale = "1"
+        // card.style.height = "100%"
+        // card.style.width = "100%"
+
+
       }
+
     });
   });
 

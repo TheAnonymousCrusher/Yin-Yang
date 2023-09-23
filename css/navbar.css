@@ -24,7 +24,7 @@
     transition: 0.5s ease-in-out;
     
     font-family: system-ui, monospace;
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 
 .nav:hover {
@@ -41,6 +41,7 @@
 .nav > .nav-header:focus {
     background: #ffdd90;
     border-radius: 50%;
+    text-align: center;
 }
 
 .nav > .nav-header > .nav-title {
@@ -61,6 +62,7 @@
     display: inline;
     float: right;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .nav > .nav-links > a {
@@ -78,6 +80,7 @@
     
     height: calc(50px + 3px);
     transform: translateY(-3px);
+    /* transform: rotate(90deg); */
 }
 
 /* Hide the navigation checkbox input initially */
@@ -89,6 +92,7 @@
     right: 10px;
     top: 0px;
     position: absolute;
+    transition: 0.5s;
 }
 
 /* Media query for mobile screens */
@@ -159,12 +163,12 @@
 
     .nav > .nav-links > a:hover,
     .nav > .nav-links > a:focus,
-    .nav > .nav-links > a:active {
+    .setting-icon {
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffdd90;
 
     height: 50px;
-    transform: translateY(0px);
+    transform: translateY(0);
     }
 
     .setting-icon {

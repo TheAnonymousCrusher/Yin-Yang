@@ -20,14 +20,25 @@
 
 
  :root {
-  --background-1: white;
-  --background-2: #ccc;
-  --background-3: #333;
-  --background-4: #111;
-  --text-1: black;
-  --text-2: silver;
-  --accent-1: #34fcfa;
-  --accent-2: #24a3a2;
+  --text: black;
+  --background: #ddd;
+  --background-light: white;
+
+  --card: white;
+  --card-light: #ddd;
+  --card-title: black;
+  --card-description: #777;
+  --card-outline: #ccc;
+  
+  --navbar: #bbb;
+
+  --sttb-background: #ccc;
+  --sttb-background-light: #aaa;
+  --sttb-background-outline: gray;
+  --sttb-text: black;
+
+  --accent: steelblue;
+  --accent-light: rgb(118, 172, 206);
 }
 
 .visually-hidden {
