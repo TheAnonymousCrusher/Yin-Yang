@@ -8,7 +8,7 @@
 }
 
 .content-asset p {
-    margin:0 auto;
+    margin:0 auto; 
 }
 
 .breadcrumb {
@@ -64,6 +64,7 @@
     font-weight:400;
     font-size: 16px;
     line-height:24px;
+    color: white;
 }
 
 .first-character {
@@ -77,17 +78,10 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.sc {
-    color: #3b8595;
+.fc {
+    color: aqua;
 }
 
-.ny {
-    color: #3d3c3a;
-}
-
-.atw {
-    color: #c48660;
-}
 
 /* Section - Title */
 /**************************/
@@ -96,6 +90,7 @@
     padding: 60px;
     margin:0 auto;
     text-align:center;
+    border-radius: 1rem;
 }
 
 #parrallax .title h1 {
@@ -106,11 +101,14 @@
 /* Section - Block */
 /**************************/
 #parrallax .block {
-    background: white;
+    background: #232323;
     padding: 60px;
     width:820px;
     margin:0 auto;
     text-align:justify;
+    border-radius: 1rem;
+    border-block-start: 0.5rem solid;
+    border-block-start-color: aqua;
 }
 
 #parrallax .block-gray {
@@ -130,72 +128,45 @@
 
 /* Section - Parallax */
 /**************************/
-#parrallax .parallax-one {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/1013/201/desktop-wallpaper-yin-yang-and-backgrounds-avatar-fish.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
-#parrallax .parallax-two {
+#parrallax .parallax-one,
+#parrallax .parallax-two,
+#parrallax .parallax-three,
+.parallax-landing {
     padding-top: 200px;
     padding-bottom: 200px;
     overflow: hidden;
     position: relative;
     width: 100%;
-    background-image: url(https://e0.pxfuel.com/wallpapers/58/980/desktop-wallpaper-yin-yang-blanace-day-night-dark-art-background-4274a3-cool-yin-yang.jpg);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
-}
-
-#parrallax .parallax-three {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-image: url(https://e0.pxfuel.com/wallpapers/420/755/desktop-wallpaper-yin-yang-ying-yang-yin-yang-yin-anime-ying-yang.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center;   
 }
 
 /* Extras */
 /**************************/
 #parrallax .line-break {
-    border-bottom:1px solid black;
-    width: 150px;
-    margin:0 auto;
+    border-bottom: 1px solid aqua;
+    width: 500px;
+    margin: 0 auto;
 }
 
 /* Media Queries */
 /**************************/
-@media screen and (max-width: 959px) and (min-width: 768px) {
+@media screen and (max-width: 960px) and (min-width: 770px) {
     #parrallax .block {
         padding: 40px;
-        width:620px;
+        width: 90vw;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 770px) {
     #parrallax .block {
         padding: 30px;
-        width:420px;
+        width: 95vw;
     }
     #parrallax h2 {
         font-size:30px;
@@ -209,9 +180,9 @@
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
     #parrallax .block {
         padding: 30px 15px;
-        width:290px;
+        width:95vw;
     }
 }

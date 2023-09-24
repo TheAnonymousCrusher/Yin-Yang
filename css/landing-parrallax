@@ -1,0 +1,60 @@
+/* @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap');
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size:3em;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 30vw 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header h1 {
+    margin-top: -100px;
+}
+
+header,
+header:hover {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url("https://www.wallpaperflare.com/static/806/96/1012/car-rain-street-black-wallpaper.jpg");
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align-last: center;
+    margin: 0;
+    padding: 0;
+} */

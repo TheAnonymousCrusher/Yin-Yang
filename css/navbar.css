@@ -164,7 +164,6 @@
     .nav > .nav-links > a:hover,
     .nav > .nav-links > a:focus,
     .setting-icon {
-    background-color: rgba(0, 0, 0, 0.3);
     color: #ffdd90;
 
     height: 50px;
