@@ -4,18 +4,18 @@ use image::GenericImageView;
 use image::Reader;
 
 #[actix_web::main]
-//outputs fail or success?
+// outputs fail or success?
 async fn main() {
 
-//JS hosting
-let JSs = HttpServer::new(||{
+// JS hosting
+const JSs = HttpServer::new(||{
     App::new().route("/main.js", web::get().to(HttpResponse::Ok))
 })
          .workers(3)
          .bind(("127.0.0.1", 8080));
 
-//HTM & CSS hosting
-let HTMCSSs = HttpServer::new(|| { 
+// HTM & CSS hosting
+const HTMCSSs = HttpServer::new(|| { 
     App::new()
         .route("/home.htm", web::get().to(HttpResponse::Ok))
         .route("/main.css", web::get().to(HttpResponse::Ok))
@@ -24,16 +24,16 @@ let HTMCSSs = HttpServer::new(|| {
 
  }
 
-//Content hosting
+// Content hosting
 
-let content = HttpServer::new(||{
+const content = HttpServer::new(||{
     App::new()
     .route("/content", web::get().top(HttpResponse::Ok))
 })
     .bind(("127.0.0.1::9191"));
 
-//content folder will have imgs and text in order, img->text->img->text....
-//will be sent in that order
+// content folder will have imgs and text in order, img->text->img->text....
+// will be sent in that order
 // line 1 of txt is title
 // the rest is the actual content
 
@@ -51,7 +51,7 @@ for pixel in img.pixels()
 }
 }
 
-//50*2 words(50+, 50-)
+// 50*2 words(50+, 50-)
 static neg_text: Vec<&str> = vec!["die", "death", "kill", "crime", "violence","war", "poverty", "hunger", "disease", "disaster", "crash", "accident", "failure", "decline", "lost", "end", "worst", "crisis", "danger", "threat", "fear", "worry", "pain", "suffer", "loss", "damage", "broken", "dirty", "ugly", "late", "wrong", "failed", "rejected", "lost", "suspected", "accused", "convicted", "injured", "missing", "fire", "flood", "earthquake","tsunami", "tornado", "hurricane", "blizzard", "heatwave", "drought", "pandemic", "epidemic";];
 
 static pos_text: Vec<&str> = vec![,"new", "found","breakthrough","success","win","hope","cure","peace","love","happy","progress","growth","improve","achieve","help","support","donate","volunteer","donate","save","heal","relieve","comfort","support","empower","inspire","celebrate","optimistic","promising","bright","future","opportunity","change","better","united","together","strong","courageous","determined","resilience","hopeful","grateful","blessed","fortunate","blessed","amazing","wonderful","incredible","milestone","possibilities";];
