@@ -1,3 +1,86 @@
+import openai       # GPT
+import requests
+import json
+
+# x str 'content 3 sentences from body'
+# x =
+openai.api_key = "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"
+
+completion = openai.ChatCompletion.create(
+  model = "gpt-3.5-turbo", #GPT model
+   messages= [
+        {"role": "system", "content": "You are a philosopher"},
+        {"role": "user", "content": "What is life?"}
+        ]
+)
+# System gives context about user to assistant
+# User is the Prompt
+print(completion)
+
+# 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
+
+# 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
+
+
+
+
+
+
+
+
+
+
+
+'''
+
+
+
+
+
+
+  <div class="row">
+
+    <div class="column">
+      <div class="card">
+
+        <img src="placeholder/01.jpg" class="card-img">
+
+        <div class="card-title">Short title</div>
+
+        <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eius illo minus a numquam facilis sequi vel deserunt consequuntur voluptatem expedita, facere eos porro ullam placeat perspiciatis in ab aliquid?</p>
+
+      </div>
+    </div>
+  
+
+    <div class="column">
+      <div class="card">
+
+        <img src="placeholder/06.jpg" class="card-img">
+
+        <div class="card-title">An pretty long title that's longer than the card itself</div>
+
+        <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum eius illo minus a numquam facilis sequi vel deserunt consequuntur voluptatem expedita, facere eos porro ullam placeat perspiciatis in ab aliquid?</p>
+
+      </div>
+    </div>
+
+    
+
+
+    
+  </div> <!-- End of "Row" -->
+
+
+
+
+
+
+backend:
+js:
+// gimme stuff here
+
+rust:
 use actix_web::{web, App, HttpResponse, HttpServer};
 use std::cmp;
 use image::GenericImageView;
@@ -9,7 +92,7 @@ async fn main() {
 
 // JS hosting
 const JSs = HttpServer::new(||{
-    App::new().route("/home.js", web::get().to(HttpResponse::Ok))
+    App::new().route("/main.js", web::get().to(HttpResponse::Ok))
 })
          .workers(3)
          .bind(("127.0.0.1", 8080));
@@ -17,8 +100,8 @@ const JSs = HttpServer::new(||{
 // HTM & CSS hosting
 const HTMCSSs = HttpServer::new(|| { 
     App::new()
-        .route("/home.html", web::get().to(HttpResponse::Ok))
-        .route("/home.css", web::get().to(HttpResponse::Ok))
+        .route("/home.htm", web::get().to(HttpResponse::Ok))
+        .route("/main.css", web::get().to(HttpResponse::Ok))
 })
               .bind(("127.0.0.1", 1010));
 
@@ -75,4 +158,39 @@ let word = (& words){
     } else if total_sentiment_score < 0 {
         let neg_content= text;
         println!("The paragraph is negative.");
-    }
+
+py:
+import openai       # GPT
+import requests
+import json
+
+# x str 'content 3 sentences from body'
+# x =
+openai.api_key = "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"
+
+completion = openai.ChatCompletion.create(
+  model = "gpt-3.5-turbo", #GPT model
+   messages= [
+        {"role": "system", "content": "You are a philosopher"},
+        {"role": "user", "content": "What is life?"}
+        ]
+)
+# System gives context about user to assistant
+# User is the Prompt
+print(completion)
+
+# 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
+
+# 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
+
+
+
+
+
+what you should dpo:
+make the alogorithm for  the rust an [py backend actually injsct code into the cards in html:
+(img)
+(title)
+(description)
+
+'''

@@ -76,7 +76,10 @@
     padding-right: 8px;
     padding-left: 3px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: aqua;
+    background: linear-gradient(45deg, aqua,aqua, violet, violet, violet);
+    /* background: #ffdd90; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Section - Title */
@@ -125,10 +128,7 @@
 /* Section - Parallax */
 /**************************/
 
-#parrallax .parallax-one,
-#parrallax .parallax-two,
-#parrallax .parallax-three,
-.parallax-landing {
+#parrallax .parallax {
     padding-top: 200px;
     padding-bottom: 200px;
     overflow: hidden;

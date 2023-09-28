@@ -114,30 +114,3 @@ body#demo-modal {
 .click-alert {
     visibility: visible;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.hidden {
-    opacity: 0;
-    transform: translateX(-5vw);
-    filter: blur(5px);
-
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0px);
-    transform: translateX(0);
-}

@@ -1815,11 +1815,11 @@ label {
 }
 
 .cta {
-    text-align: center
+    text-align: center;
 }
 
 .cta .section-inner {
-    padding: 48px 16px
+    padding: 48px 16px;
 }
 
 .cta .section-title {
